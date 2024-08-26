@@ -114,13 +114,16 @@ export const SeccionVenta = () => {
           className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-80 p-4"
           onClick={() => setOpenImage(null)}
         >
-          <Image
-            src={openImage}
-            alt="Open Image"
-            className="w-auto h-auto object-contain rounded-lg"
-            width={1200}
-            height={800}
-          />
+          <div className="relative w-full h-full max-w-[90vw] max-h-[90vh]">
+            <Image
+              src={openImage}
+              alt="Open Image"
+              layout="fill"
+              objectFit="contain"
+              className="rounded-lg"
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 70vw"
+            />
+          </div>
         </div>
       )}
     </section>
