@@ -49,7 +49,7 @@ export default function Home() {
               <button
                 onClick={() =>
                   (window.location.href =
-                    "https://api.whatsapp.com/send?phone=5216692071277&text=Hola!%20Me%20interesa%20uno%20de%20sus%20servicios")
+                    "https://api.whatsapp.com/send?phone=5216941102012&text=Hola!%20Me%20interesa%20uno%20de%20sus%20servicios")
                 }
                 className="bg-[#FFCC00] text-[#0077B6] font-bold py-2 px-4 rounded hover:bg-[#FFDD33] transition-transform duration-500 hover:scale-105"
               >

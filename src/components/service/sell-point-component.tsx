@@ -21,7 +21,7 @@ export const SeccionVenta = () => {
     { text: "www.meishi.com.mx", url: "https://meishi.com.mx" },
     {
       text: "¡Quiero saber más!",
-      url: "https://api.whatsapp.com/send?phone=5216692071277&text=Hola!%20Me%20interesa%20uno%20de%20sus%20servicios",
+      url: "https://api.whatsapp.com/send?phone=5216941102012&text=Hola!%20Me%20interesa%20uno%20de%20sus%20servicios",
     },
   ];
 
@@ -117,7 +117,7 @@ export const SeccionVenta = () => {
           <Image
             src={openImage}
             alt="Open Image"
-            className="max-w-full max-h-full object-contain rounded-lg"
+            className="w-auto h-auto object-contain rounded-lg"
             width={1200}
             height={800}
           />

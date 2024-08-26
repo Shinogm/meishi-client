@@ -105,7 +105,7 @@ export const ProductPresentation = ({ id, ref }: SectionProps) => {
 
       {showRedirect && (
         <RedirectComponent
-          url="https://api.whatsapp.com/send?phone=5216692071277&text=Hola!%20Me%20interesa%20uno%20de%20sus%20servicios"
+          url="https://api.whatsapp.com/send?phone=5216941102012&text=Hola!%20Me%20interesa%20uno%20de%20sus%20servicios"
           duration={750}
           bool={showRedirect}
         />

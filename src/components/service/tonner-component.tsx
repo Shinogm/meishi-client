@@ -18,7 +18,7 @@ export const TonersComponent = () => {
     { text: "www.crt-c.com.mx", url: "https://ctrl-c.com.mx/" },
     {
       text: "¡Quiero saber más!",
-      url: "https://api.whatsapp.com/send?phone=5216692071277&text=Hola!%20Me%20interesa%20uno%20de%20sus%20toners",
+      url: "https://api.whatsapp.com/send?phone=5216941102012&text=Hola!%20Me%20interesa%20uno%20de%20sus%20toners",
     },
   ];
 

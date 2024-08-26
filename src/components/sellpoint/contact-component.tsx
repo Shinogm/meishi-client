@@ -67,45 +67,46 @@ export const ContactComponent = () => {
             initial={{ opacity: 0, y: -50 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -50 }}
-            className="p-6 border-2 border-blue-500 rounded-lg shadow-2xl max-w-xs mx-auto bg-gradient-to-b from-blue-400 to-purple-500"
+            className="p-4 border-2 border-blue-500 rounded-lg shadow-xl max-w-xs mx-auto bg-gradient-to-b from-blue-400 to-purple-500"
           >
-            <span className="text-center text-2xl font-bold mb-4 text-white drop-shadow-xl block">
+            <h2 className="text-xl font-bold mb-3 text-white text-center">
               ¡Llámanos ahora!
-            </span>
+            </h2>
 
-            <div className="flex flex-col items-center bg-white p-6 border rounded-lg shadow-lg space-y-4">
-              <div className="flex flex-col items-center text-lg space-y-2">
+            <div className="bg-white p-4 rounded-lg shadow-md space-y-3">
+              <div className="flex flex-col items-center">
                 {phoneNumber.split("").map((digit, index) => (
                   <motion.span
                     key={index}
-                    initial={{ opacity: 0, y: -20 }}
+                    initial={{ opacity: 0, y: -10 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: index * 0.1 }}
-                    className="text-blue-600 font-mono tracking-widest text-2xl"
+                    className="text-blue-600 font-mono text-xl"
                   >
                     {digit}
                   </motion.span>
                 ))}
               </div>
-              <motion.a
-                whileHover={{ scale: 1.2, rotate: 15 }}
-                whileTap={{ scale: 0.8, rotate: -15 }}
-                className="pointer-events-auto mt-4"
-                href="#"
-                onClick={() => setShowRedirect(true)}
-              >
-                <Image
-                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/1200px-WhatsApp.svg.png"
-                  alt="WhatsApp Icon"
-                  width={60}
-                  height={60}
-                  className="w-16 h-16 drop-shadow-2xl"
-                />
-              </motion.a>
+              <div className="flex justify-center mt-3">
+                <motion.a
+                  whileHover={{ scale: 1.1 }}
+                  whileTap={{ scale: 0.9 }}
+                  href="#"
+                  onClick={() => setShowRedirect(true)}
+                >
+                  <Image
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/1200px-WhatsApp.svg.png"
+                    alt="WhatsApp"
+                    width={50}
+                    height={50}
+                    className="w-12 h-12"
+                  />
+                </motion.a>
+              </div>
 
               {showRedirect && (
                 <RedirectComponent
-                  url="https://api.whatsapp.com/send?phone=5216692071277&text=Hola!%20Me%20interesa%20uno%20de%20sus%20servicios"
+                  url="https://api.whatsapp.com/send?phone=5216941102012&text=Hola!%20Me%20interesa%20uno%20de%20sus%20servicios"
                   duration={3000}
                   bool={showRedirect}
                 />
