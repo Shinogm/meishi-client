@@ -7,7 +7,7 @@ import { motion, AnimatePresence } from "framer-motion";
 export const ContactComponent = () => {
   const [showRedirect, setShowRedirect] = useState(false);
   const [isVisible, setIsVisible] = useState(false);
-  const phoneNumber = "669 207 1277";
+  const phoneNumber = "694 110 2012";
   const [isRinging, setIsRinging] = useState(false);
 
   useEffect(() => {
